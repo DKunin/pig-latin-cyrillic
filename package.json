@@ -1,0 +1,30 @@
+{
+  "name": "pig-latin-cyrillic",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/pig-latin-cyrillic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/pig-latin-cyrillic/issues"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "homepage": "https://github.com/dkunin/pig-latin-cyrillic",
+  "keywords": [
+    "pig,",
+    "latin,",
+    "fun,",
+    "cyrillic,",
+    "converter"
+  ],
+  "license": "MIT",
+  "description": "Super simple fun project for translating to pig latin in russian",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "0.19.1"
+  }
+}
