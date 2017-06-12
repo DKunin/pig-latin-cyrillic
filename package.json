@@ -11,7 +11,8 @@
     "url": "https://github.com/dkunin/pig-latin-cyrillic/issues"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "browserify main.js -o bundle.js"
   },
   "homepage": "https://github.com/dkunin/pig-latin-cyrillic",
   "keywords": [

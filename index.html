@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Переводчик поросячей латыни</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.min.js"></script>
+    <style>
+        body {
+            font-family: Helvetica, Arial;
+        }
+        .two-colums {
+            display: flex;
+            justify-content: space-around;
+        }
+        .two-colums > div{
+            width: 40%;
+        }
+        textarea {
+            width: 100%;
+            min-height: 300px;
+        }
+        select {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+    <template class="translator">
+        <div>
+            <h2>Переводчик</h2>
+            <div class="two-colums">
+                <div>
+                    <select v-model="dialect">
+                        <option disabled value="с">Выберите диалект, значение по умолчанию - C</option>
+                        <option>с</option>
+                        <option>б</option>
+                        <option>з</option>
+                        <option>а</option>
+                        <option>к</option>
+                        <option>ф</option>
+                    </select>
+                    <textarea v-model="message"></textarea>
+                </div>
+                <div>
+                    {{ translated }}
+                </div>
+            </div>
+        </div>
+    </template>
+    <script type="text/javascript" src="./bundle.js"></script>
+</body>
+</html>
